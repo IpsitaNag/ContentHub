@@ -1,0 +1,500 @@
+/* =========================
+   Create Post Form
+   ========================= */
+
+.create-form {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e5e5;
+}
+
+/* Form fields */
+.create-form .form-field {
+    margin-bottom: 22px !important;
+}
+
+.create-form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+/* Input */
+.create-form input[type="text"] {
+    height: 48px;
+}
+
+/* Textareas */
+.create-form textarea {
+    resize: vertical;
+    min-height: 150px;
+    line-height: 1.6;
+}
+
+/* Focus effect */
+.create-form .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+/* Placeholder */
+.create-form .form-control::placeholder {
+    color: #8a8a8a;
+}
+
+/* Add Post button */
+.create-form input[type="submit"] {
+    width: 120px;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.create-form input[type="submit"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .create-form {
+        max-width: 90% !important;
+        padding: 28px !important;
+        margin-top: 30px;
+    }
+
+    .create-form textarea {
+        min-height: 130px;
+    }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .create-form {
+        max-width: 94% !important;
+        padding: 20px !important;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+    }
+
+    .create-form .form-control {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .create-form input[type="text"] {
+        height: 45px;
+    }
+
+    .create-form textarea {
+        min-height: 120px;
+        /* rows: 6; */
+    }
+
+    .create-form input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+/* =========================
+   Very Small Screens
+   ========================= */
+
+@media (max-width: 400px) {
+
+    .create-form {
+        max-width: 96% !important;
+        padding: 16px !important;
+    }
+
+    .create-form textarea {
+        min-height: 110px;
+    }
+}
+
+
+
+
+/* ==============================
+   Admin Posts List
+================================= */
+
+body {
+    background-color: #f5f7fa;
+}
+
+/* Main posts area */
+.posts-list {
+    width: 100%;
+    padding: 20px !important;
+}
+
+/* Success messages */
+.posts-list .alert {
+    border-radius: 8px;
+    border: none;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Table wrapper */
+.posts-list .table {
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* Table header */
+.posts-list .table thead {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.posts-list .table thead th {
+    padding: 16px 12px;
+    font-size: 17px !important;
+    font-weight: 700;
+    vertical-align: middle;
+    border-color: #e5e5e5;
+}
+
+/* Table body */
+.posts-list .table tbody td {
+    padding: 16px 12px;
+    vertical-align: middle;
+    color: #495057;
+    font-size: 15px;
+    border-color: #e5e5e5
+}
+
+/* Row hover */
+.posts-list .table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.posts-list .table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Title */
+.posts-list .table tbody td:nth-child(2) {
+    font-weight: 600;
+    color: #212529;
+    font-size: 16px;
+}
+
+/* Date */
+.posts-list .table tbody td:first-child {
+    text-align: center;
+    color: #434648;
+    font-size: 14px;
+}
+
+/* Action column */
+.posts-list .table tbody td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Action buttons */
+.posts-list .btn {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+/* View */
+.posts-list .btn-info {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+.posts-list .btn-info:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+    color: white;
+}
+
+/* Edit */
+.posts-list .btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.posts-list .btn-warning:hover {
+    background-color: #ffca2c;
+    transform: translateY(-1px);
+}
+
+/* Delete */
+.posts-list .btn-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.posts-list .btn-danger:hover {
+    background-color: #bb2d3b;
+    transform: translateY(-1px);
+}
+
+
+/* ==============================
+   Tablet
+================================= */
+
+@media (min-width: 576px) {
+
+    .posts-list {
+        padding: 30px !important;
+    }
+
+    .posts-list .table thead th {
+        font-size: 15px;
+    }
+
+    .posts-list .table tbody td {
+        padding: 17px 14px;
+    }
+}
+
+
+/* ==============================
+   Desktop
+================================= */
+
+@media (min-width: 768px) {
+
+    .posts-list {
+        padding: 40px !important;
+    }
+
+    .posts-list .table {
+        margin-top: 15px;
+    }
+
+    .posts-list .table thead th {
+        padding: 17px 15px;
+    }
+
+    .posts-list .table tbody td {
+        padding: 18px 15px;
+    }
+}
+
+
+
+
+
+
+
+/* =================================
+       Dashboard Layout
+    ================================= */
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+
+/* =================================
+       Sidebar
+    ================================= */
+
+.sidebar {
+    width: 280px;
+    min-width: 280px;
+    min-height: 100vh;
+    height: auto !important;
+
+    background-color: #212529 !important;
+
+    flex-shrink: 0;
+
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
+/* =================================
+   Admin View Post Page
+================================= */
+
+.post {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+
+    background: #ffffff !important;
+
+    padding: 45px !important;
+
+    border: 1px solid #e1e5e9;
+    border-radius: 12px;
+
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =================================
+   Post Title
+================================= */
+
+.post h1 {
+    margin-bottom: 15px;
+
+    color: #212529;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =================================
+   Publication Date
+================================= */
+
+.post h1+p {
+    margin-bottom: 35px;
+
+    color: #6c757d;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+   Post Content
+================================= */
+
+.post h1+p+p {
+    margin: 0;
+
+    color: #343a40;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    white-space: pre-line;
+}
+
+
+/* =================================
+   Mobile
+================================= */
+
+@media (max-width: 768px) {
+
+    .post {
+        max-width: 92%;
+
+        margin: 30px auto;
+
+        padding: 30px !important;
+
+        border-radius: 10px;
+    }
+
+    .post h1 {
+        font-size: 28px;
+    }
+
+    .post h1+p {
+        margin-bottom: 25px;
+    }
+
+    .post h1+p+p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =================================
+   Small Mobile
+================================= */
+
+@media (max-width: 576px) {
+
+    .post {
+        max-width: 94%;
+
+        margin: 20px auto;
+
+        padding: 22px !important;
+    }
+
+    .post h1 {
+        font-size: 24px;
+        line-height: 1.35;
+    }
+
+    .post h1+p {
+        font-size: 13px;
+        margin-bottom: 22px;
+    }
+
+    .post h1+p+p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =================================
+   Very Small Screens
+================================= */
+
+@media (max-width: 400px) {
+
+    .post {
+        max-width: 96%;
+        padding: 18px !important;
+    }
+
+    .post h1 {
+        font-size: 21px;
+    }
+
+    .post h1+p+p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
